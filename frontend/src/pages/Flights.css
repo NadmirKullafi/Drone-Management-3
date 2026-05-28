@@ -1,0 +1,57 @@
+.flights-page {}
+
+.flight-stats {
+  display: flex;
+  gap: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.flight-stat-item {
+  flex: 1;
+  padding: 16px 12px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.flight-stat-item:last-child { border-right: none; }
+
+.flight-stat-value { font-size: 22px; font-weight: 800; }
+.flight-stat-label { font-size: 11px; color: var(--text-muted); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.btn-complete {
+  background: rgba(16,185,129,0.1);
+  color: #10b981;
+  border: 1px solid rgba(16,185,129,0.2);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-complete:hover { background: rgba(16,185,129,0.2); }
+
+.btn-delete-sm {
+  background: rgba(239,68,68,0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239,68,68,0.2);
+  border-radius: 6px;
+  padding: 5px 7px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete-sm:hover { background: rgba(239,68,68,0.2); }
+
+@media (max-width: 700px) {
+  .flight-stats { flex-wrap: wrap; }
+  .flight-stat-item { min-width: 33%; border-bottom: 1px solid var(--border); }
+  .data-table { font-size: 12px; }
+}

@@ -1,0 +1,192 @@
+.detaje-page {}
+
+.detaje-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.btn-back:hover { color: var(--text-primary); }
+
+.header-actions { display: flex; gap: 10px; }
+
+.btn-edit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(99,102,241,0.1);
+  color: var(--primary);
+  border: 1px solid rgba(99,102,241,0.2);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-edit:hover { background: rgba(99,102,241,0.2); }
+
+.btn-cancel {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.detaje-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.detaje-main-card, .side-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.side-card { margin-bottom: 16px; }
+.side-card h3 { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-bottom: 14px; }
+
+.drone-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.drone-hero-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(14,165,233,0.15));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.drone-hero-info { flex: 1; }
+.drone-hero-info h1 { font-size: 22px; font-weight: 800; color: var(--text-primary); }
+.drone-model-text { font-size: 14px; color: var(--text-secondary); margin-top: 2px; }
+.drone-serial-text { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.battery-section { margin-bottom: 20px; }
+
+.battery-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.battery-big {
+  height: 10px;
+  background: var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.battery-big-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.spec-block {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-block-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.spec-block-value { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+
+.stat-rows { display: flex; flex-direction: column; gap: 10px; }
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(51,65,85,0.4);
+}
+
+.stat-row:last-child { border-bottom: none; }
+.stat-row span { color: var(--text-muted); }
+.stat-row strong { color: var(--text-primary); }
+
+.notes-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.edit-input {
+  background: var(--bg-dark);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.edit-title { font-size: 22px; font-weight: 700; }
+.edit-small { width: 90px; font-size: 13px; }
+
+@media (max-width: 900px) {
+  .detaje-grid { grid-template-columns: 1fr; }
+  .specs-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 500px) {
+  .specs-grid { grid-template-columns: 1fr; }
+  .drone-hero { flex-direction: column; text-align: center; }
+}
