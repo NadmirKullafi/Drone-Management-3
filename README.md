@@ -153,4 +153,4 @@ Aplikacioni do të hapet në: `http://localhost:3000`
 ---
 
 ## 👨‍💻 Zhvilluar nga
-Nadi - Detyra e Kursit Web 2024
+Nadmir Kullafi - Detyra e Kursit Web 2026
