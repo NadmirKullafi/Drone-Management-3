@@ -1,10 +1,10 @@
-# 🚁 DroneControl - Sistem Menaxhimi dhe Monitorimi Dronash
+#  DroneControl - Sistem Menaxhimi dhe Monitorimi Dronash
 
 Projekt full-stack MERN (MongoDB, Express, React, Node.js) për menaxhimin dhe monitorimin e dronave.
 
 ---
 
-## 📁 Struktura e Projektit
+##  Struktura e Projektit
 
 ```
 drone-management/
@@ -48,7 +48,7 @@ drone-management/
 
 ---
 
-## 🚀 Si të instaloni dhe ekzekutoni
+##  Si të instaloni dhe ekzekutoni
 
 ### Kërkesat paraprake
 - Node.js v16+
@@ -82,47 +82,47 @@ Aplikacioni do të hapet në: `http://localhost:3000`
 
 ---
 
-## 🔑 API Endpoints
+##  API Endpoints
 
 ### Autentifikimi
 | Metoda | URL | Përshkrimi |
 |--------|-----|------------|
 | POST | /api/auth/regjistro | Regjistro përdorues |
 | POST | /api/auth/hyrje | Hyrje / Login |
-| GET | /api/auth/profili | Merr profilin (🔒) |
+| GET | /api/auth/profili | Merr profilin  |
 
 ### Dronat
 | Metoda | URL | Përshkrimi |
 |--------|-----|------------|
-| GET | /api/drones | Merr të gjithë dronat (🔒) |
-| GET | /api/drones/statistika | Statistikat (🔒) |
-| GET | /api/drones/:id | Merr dron specifik (🔒) |
-| POST | /api/drones | Shto dron të ri (🔒) |
-| PUT | /api/drones/:id | Përditëso dronin (🔒) |
-| DELETE | /api/drones/:id | Fshi dronin (🔒 Admin) |
+| GET | /api/drones | Merr të gjithë dronat |
+| GET | /api/drones/statistika | Statistikat  |
+| GET | /api/drones/:id | Merr dron specifik  |
+| POST | /api/drones | Shto dron të ri  |
+| PUT | /api/drones/:id | Përditëso dronin  |
+| DELETE | /api/drones/:id | Fshi dronin (Admin) |
 
 ### Fluturimet
 | Metoda | URL | Përshkrimi |
 |--------|-----|------------|
-| GET | /api/flights | Merr fluturimet (🔒) |
-| GET | /api/flights/statistika | Statistikat (🔒) |
-| POST | /api/flights | Regjistro fluturim (🔒) |
-| PUT | /api/flights/:id/perfundo | Përfundo fluturimin (🔒) |
-| DELETE | /api/flights/:id | Fshi fluturimin (🔒) |
+| GET | /api/flights | Merr fluturimet  |
+| GET | /api/flights/statistika | Statistikat  |
+| POST | /api/flights | Regjistro fluturim  |
+| PUT | /api/flights/:id/perfundo | Përfundo fluturimin  |
+| DELETE | /api/flights/:id | Fshi fluturimin  |
 
 ### Alarmet
 | Metoda | URL | Përshkrimi |
 |--------|-----|------------|
-| GET | /api/alerts | Merr alarmet (🔒) |
-| POST | /api/alerts | Krijo alarm (🔒) |
-| PUT | /api/alerts/:id/lexo | Shëno si lexuar (🔒) |
-| PUT | /api/alerts/:id/zgjidh | Zgjidh alarmin (🔒) |
+| GET | /api/alerts | Merr alarmet  |
+| POST | /api/alerts | Krijo alarm |
+| PUT | /api/alerts/:id/lexo | Shëno si lexuar  |
+| PUT | /api/alerts/:id/zgjidh | Zgjidh alarmin  |
 
-> 🔒 = Kërkon autentifikim (Bearer JWT Token)
+>  = Kërkon autentifikim (Bearer JWT Token)
 
 ---
 
-## ✨ Veçoritë Kryesore
+##  Veçoritë Kryesore
 
 - **Dashboard** interaktiv me grafikë (Recharts)
 - **Menaxhimi i Dronave** - CRUD i plotë, filtrim, kërkim
@@ -134,7 +134,7 @@ Aplikacioni do të hapet në: `http://localhost:3000`
 
 ---
 
-## 🛠️ Teknologjitë e Përdorura
+##  Teknologjitë e Përdorura
 
 ### Backend
 - **Node.js** + **Express.js** - Server framework
