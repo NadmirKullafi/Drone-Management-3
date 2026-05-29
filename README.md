@@ -62,20 +62,19 @@ cd drone-management
 
 ### 2. Konfiguroni Backend
 ```bash
-cd backend
+cd C:\Users\User\Documents\Claude\Projects\Detyra e Kursit Web\drone-management\backend
 npm install
-cp .env.example .env
-# Edito .env dhe vendosni MONGO_URI tuaj
-npm run dev
+node server.js
 ```
 
 Serveri do të nisi në: `http://localhost:5000`
 
 ### 3. Konfiguroni Frontend
 ```bash
-cd frontend
+cd C:\Users\User\Documents\Claude\Projects\Detyra e Kursit Web\drone-management\frontend
 npm install
 npm start
+
 ```
 
 Aplikacioni do të hapet në: `http://localhost:3000`
