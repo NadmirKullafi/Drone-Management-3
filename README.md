@@ -62,7 +62,7 @@ cd drone-management
 
 ### 2. Konfiguroni Backend
 ```bash
-cd C:\Users\User\Documents\Claude\Projects\Detyra e Kursit Web\drone-management\backend
+cd (Folderi ku ju e keni ruajtur Backend)
 npm install
 node server.js
 ```
@@ -71,7 +71,7 @@ Serveri do të nisi në: `http://localhost:5000`
 
 ### 3. Konfiguroni Frontend
 ```bash
-cd C:\Users\User\Documents\Claude\Projects\Detyra e Kursit Web\drone-management\frontend
+cd (Folderi ku ju e keni ruajtur Frontend)
 npm install
 npm start
 
